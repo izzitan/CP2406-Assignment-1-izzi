@@ -39,7 +39,7 @@ public class Main {
             i.printRoadStatus();
         }
 
-        System.out.println("\nCars: ");
+        System.out.println("\nSimulation start...");
         ArrayList<Car> carList = new ArrayList<Car>();
         for (int i = 0; i < carNumbers; i++){
             Car cars = new Car();
@@ -72,6 +72,7 @@ public class Main {
                     roadFinished = 0;
                     carFinished++;
                 }
+                i.printCarFinished();
             }
         }
     }

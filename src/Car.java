@@ -21,6 +21,10 @@ public class Car {
         System.out.printf("car_%s is going at %dkm/h at position %d on road_%s\n", this.id, this.speed, this.position, road.getId());
     }
 
+    public void printCarFinished(){
+        System.out.printf("car_%s has finished the course\n", this.id);
+    }
+
     public void moveCar(){
         this.speed = this.onRoad.getSpeedLimit();
         if (this.onRoad.getEndPosition() <= this.position){
