@@ -1,3 +1,6 @@
+package Test;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,24 +14,24 @@ public class CarTest{
     roads.setEndPosition(10);
     void moveCar(){
         cars.moveCar();
-        assertEquals(2, cars.getPosition());
+        Assertions.assertEquals(2, cars.getPosition());
     }
 
     @Test
     cars.setId("0");
     void getId(){
-        assertEquals("0", cars.getId());
+        Assertions.assertEquals("0", cars.getId());
     }
 
     @Test
     cars.setSpeed(3);
     void getSpeed(){
-        assertEquals(3,cars.getSpeed());
+        Assertions.assertEquals(3,cars.getSpeed());
     }
 
     @Test
     cars.setPosition(10);
     void getPosition(){
-        assertEquals(10,cars.getPosition());
+        Assertions.assertEquals(10,cars.getPosition());
     }
 }
