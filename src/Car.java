@@ -1,8 +1,7 @@
-import java.util.ArrayList;
-
 public class Car {
-    private String id;
+    public String id;
     private Road onRoad;
+    public int length = 1;
     private int speed = 1;
     private int position;
 
@@ -59,5 +58,9 @@ public class Car {
 
     public void setPosition(int position){
         this.position = position;
+    }
+
+    public int getLength(){
+        return this.length;
     }
 }

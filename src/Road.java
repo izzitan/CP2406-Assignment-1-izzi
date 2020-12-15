@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Road {
     private String id;
     private int roadLength;
@@ -7,23 +5,6 @@ public class Road {
     private int startPosition;
     private int endPosition;
     private static int totalPosition;
-    //private ArrayList<Car> cars = new ArrayList<>();
-    //private ArrayList<TrafficLight> lights = new ArrayList<>();
-    private ArrayList<Road> roads = new ArrayList<>();
-
-
-    /*
-    public Road(String id, int roadLength, int speedLimit, int startPosition){
-        this.id = "road_" + id;
-        this.roadLength = roadLength;
-        this.speedLimit = speedLimit;
-        this.startPosition = startPosition;
-        //totalPosition = this.startPosition + totalPosition;
-        this.endPosition = this.roadLength + totalPosition;
-        totalPosition = totalPosition + startPosition;
-    }
-
-     */
 
     public void printRoadStatus(){
         System.out.printf("road_%s is %dkm long with speed limit of %dkm/h and position at %s to %s\n", this.id, this.roadLength, this.speedLimit, this.startPosition, this.endPosition);

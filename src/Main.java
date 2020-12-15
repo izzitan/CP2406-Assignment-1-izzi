@@ -106,17 +106,18 @@ public class Main {
                             roadFinished = 1; // set road state to finished to move to next road in Array
                             count++;
                         }
+                        else{
+                            //Car goes through one cycle
+                            try{
+                                Thread.sleep(200); // set speed of simulation
+                            }
+                            catch (InterruptedException sim){
+                                Thread.currentThread().interrupt();
+                            }
+                            cars.moveCar();
+                            cars.printCarStatus(roads);
 
-                        //Car goes through one cycle
-                        try{
-                            Thread.sleep(200); // set speed of simulation
                         }
-                        catch (InterruptedException sim){
-                            Thread.currentThread().interrupt();
-                        }
-                        cars.moveCar();
-                        cars.printCarStatus(roads);
-
                     }
                     carFinished++;
                 }
